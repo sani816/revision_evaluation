@@ -36,4 +36,13 @@ function createCountDown(seconds,onTick,onComplete){
     intervalid(setInterval(tick,1000))
         }
     }
+
 }
+
+
+
+const countDown=createCountDown(5,(remaining)=>{
+    console.log(`remaining:${remaining}`)
+},()=>{
+    console.log("countdown Completed")
+})
